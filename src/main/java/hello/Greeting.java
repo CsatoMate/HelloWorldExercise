@@ -1,14 +1,17 @@
 package hello;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Greeting {
 
-    private final String greeting;
+    @JsonProperty("greeting")
+    private final String content;
 
     Greeting(String greeting) {
-        this.greeting = greeting;
+        this.content = greeting;
     }
 
     public String getContent() {
-        return greeting;
+        return content;
     }
 }

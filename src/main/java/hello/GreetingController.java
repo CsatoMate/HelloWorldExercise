@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 
     private static final String template = "Hello, %s!";
-    private UpperFirstLetter ufl = new UpperFirstLetter();
 
     @RequestMapping("/")
     public String index() {
@@ -22,6 +21,6 @@ public class GreetingController {
 
     @RequestMapping("/api/greeting/{usernames}")
     public Greeting greeting(@PathVariable(value = "usernames") String name) {
-        return new Greeting(String.format(template, ufl.MakeUpper(name)));
+        return new Greeting(String.format(template, UpperFirstLetter.MakeUpper(name)));
     }
 }

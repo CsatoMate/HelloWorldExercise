@@ -1,2 +1,4 @@
 hello\Application.class
+hello\UpperFirstLetter.class
+hello\Greeting.class
 hello\GreetingController.class
