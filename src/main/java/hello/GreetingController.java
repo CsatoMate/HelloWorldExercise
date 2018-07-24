@@ -24,4 +24,6 @@ public class GreetingController {
     public Greeting greeting(@PathVariable(value = "usernames") String name) {
         return new Greeting(String.format(template, ufl.MakeUpper(name)));
     }
+
+
 }

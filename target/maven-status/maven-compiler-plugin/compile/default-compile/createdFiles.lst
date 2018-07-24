@@ -1,2 +1,7 @@
-hello\Application.class
+hello\EmployeeController.class
+hello\EmployeeRepository.class
 hello\GreetingController.class
+hello\Application.class
+hello\UpperFirstLetter.class
+hello\Employee.class
+hello\Greeting.class
